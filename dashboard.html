@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trading Dashboard</title>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> <!-- Include Chart.js -->
+  <style>
+    /* Center the content and shift the chart to the right */
+    body {
+      display: flex;
+      justify-content: flex-start; /* Align content to the left */
+      padding: 20px;
+    }
+    
+    /* Resize the canvas element to 75% of its original size */
+    #performanceChart {
+      width: 300px !important; /* 75% of 400px */
+      height: 300px !important; /* 75% of 400px */
+      margin-left: 50px; /* Shift the chart to the right */
+    }
+  </style>
+</head>
+<body>
+  <h1>Trading Dashboard</h1>
+  
+  <!-- Canvas for the Pie Chart (P&L) -->
+  <h2>Profit and Loss Chart</h2>
+  <canvas id="performanceChart"></canvas> <!-- Pie Chart -->
+  
+  <script src="app.js"></script> <!-- Link to the JavaScript file -->
+</body>
+</html>
